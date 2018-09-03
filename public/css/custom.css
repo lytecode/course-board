@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0 0 100px;
+  background-color: honeydew;
 }
 header {
   padding: 50px 0 50px;
@@ -36,8 +37,30 @@ footer {
   padding-top: 30px;
 }
 
+.card {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
 .form-group {
   width: 50%;
   margin: 0 auto;
-  /* top: 100%; */
+}
+
+.sign__in {
+  width: 40%;
+  margin: 0 auto;
+}
+
+legend {
+  text-align: center;
+}
+
+.courses div {
+  font-size: 1.1rem;
+}
+
+.profile__details {
+  text-align: center;
 }

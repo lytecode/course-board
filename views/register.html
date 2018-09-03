@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trackit - Student Course Management System</title>
+    <link rel="stylesheet" href="/public/css/boostrap.min.css">
+    <link rel="stylesheet" href="/public/css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="home.html">Track IT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Delete</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <form class="form-group" method="POST" action="#">
+                <label class="col-form-label col-form-label-lg" for="firstname">First Name</label>
+                <input class="form-control form-control-lg" type="text" placeholder="firstname" id="firstname">
+
+                <label class="col-form-label col-form-label-lg" for="lastname">Last Name</label>
+                <input class="form-control form-control-lg" type="text" placeholder="lastname" id="lastname">
+
+                <label class="col-form-label col-form-label-lg" for="email">Email</label>
+                <input class="form-control form-control-lg" type="text" placeholder="yourmail@email.com" id="email">
+
+                <label class="col-form-label col-form-label-lg" for="password">Password</label>
+                <input class="form-control form-control-lg" type="password" placeholder="password" id="password">
+
+                <br>
+                <button type="submit" class="btn btn-outline-primary">Sign up</button>
+                <p>Already Signed up? <a href="home.html">Login</a> </p>
+            </form>>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>All Rights Reserved | Track IT 2018</p>
+    </footer>
+</body>
+
+</html>
