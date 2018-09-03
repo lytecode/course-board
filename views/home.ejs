@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trackit - Student Course Management System</title>
-    <link rel="stylesheet" href="/public/css/boostrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="/css/boostrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body>
@@ -41,15 +41,16 @@
     </header>
 
     <div class="container">
-        <form class="form-group sign__in" method="POST" action="#">
+        <form class="form-group sign__in" method="POST" action="/">
             <label class="col-form-label col-form-label-lg" for="email">Email</label>
-            <input class="form-control form-control-lg" type="text" placeholder="yourmail@email.com" id="email">
+            <input class="form-control form-control-lg" type="email" name="username" placeholder="yourmail@email.com"
+                id="email">
 
             <label class="col-form-label col-form-label-lg" for="password">Password</label>
-            <input class="form-control form-control-lg" type="password" placeholder="password" id="password">
+            <input class="form-control form-control-lg" type="password" name="password" placeholder="password" id="password">
             <br>
             <button type="submit" class="btn btn-outline-primary">Sign in</button>
-            <p>Don't have an account? <a href="register.html">Sign up</a> </p>
+            <p>Don't have an account? <a href="/register">Sign up</a> </p>
         </form>
     </div>
 
