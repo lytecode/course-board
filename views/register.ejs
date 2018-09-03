@@ -34,17 +34,20 @@
         <div class="card">
             <form class="form-group" method="POST" action="/register">
                 <label class="col-form-label col-form-label-lg" for="firstname">First Name</label>
-                <input class="form-control form-control-lg" type="text" name="firstname" placeholder="firstname" id="firstname">
+                <input class="form-control form-control-lg" type="text" name="firstname" placeholder="firstname" id="firstname"
+                    required>
 
                 <label class="col-form-label col-form-label-lg" for="lastname">Last Name</label>
-                <input class="form-control form-control-lg" type="text" name="lastname" placeholder="lastname" id="lastname">
+                <input class="form-control form-control-lg" type="text" name="lastname" placeholder="lastname" id="lastname"
+                    required>
 
                 <label class="col-form-label col-form-label-lg" for="email">Email</label>
-                <input class="form-control form-control-lg" type="text" name="username" placeholder="yourmail@email.com"
-                    id="email">
+                <input class="form-control form-control-lg" type="email" name="username" placeholder="yourmail@email.com"
+                    id="email" required>
 
                 <label class="col-form-label col-form-label-lg" for="password">Password</label>
-                <input class="form-control form-control-lg" type="password" name="password" placeholder="password" id="password">
+                <input class="form-control form-control-lg" type="password" name="password" placeholder="password" id="password"
+                    required>
 
                 <br>
                 <button type="submit" class="btn btn-outline-primary">Sign up</button>

@@ -38,10 +38,11 @@
         <form class="form-group sign__in" method="POST" action="/">
             <label class="col-form-label col-form-label-lg" for="email">Email</label>
             <input class="form-control form-control-lg" type="email" name="username" placeholder="yourmail@email.com"
-                id="email">
+                id="email" required>
 
             <label class="col-form-label col-form-label-lg" for="password">Password</label>
-            <input class="form-control form-control-lg" type="password" name="password" placeholder="password" id="password">
+            <input class="form-control form-control-lg" type="password" name="password" placeholder="password" id="password"
+                required>
             <br>
             <button type="submit" class="btn btn-outline-primary">Sign in</button>
             <p>Don't have an account? <a href="/register">Sign up</a> </p>
