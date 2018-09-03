@@ -67,3 +67,7 @@ legend {
   width: 40%;
   margin: 0 auto;
 }
+
+.err__details {
+  text-align: center;
+}
