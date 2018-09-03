@@ -20,17 +20,11 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/register">Register <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="profile.html">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Delete</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="/register">Register</a>
                 </li>
             </ul>
         </div>
@@ -40,16 +34,17 @@
         <div class="card">
             <form class="form-group" method="POST" action="/register">
                 <label class="col-form-label col-form-label-lg" for="firstname">First Name</label>
-                <input class="form-control form-control-lg" type="text" placeholder="firstname" id="firstname">
+                <input class="form-control form-control-lg" type="text" name="firstname" placeholder="firstname" id="firstname">
 
                 <label class="col-form-label col-form-label-lg" for="lastname">Last Name</label>
-                <input class="form-control form-control-lg" type="text" placeholder="lastname" id="lastname">
+                <input class="form-control form-control-lg" type="text" name="lastname" placeholder="lastname" id="lastname">
 
                 <label class="col-form-label col-form-label-lg" for="email">Email</label>
-                <input class="form-control form-control-lg" type="text" placeholder="yourmail@email.com" id="email">
+                <input class="form-control form-control-lg" type="text" name="username" placeholder="yourmail@email.com"
+                    id="email">
 
                 <label class="col-form-label col-form-label-lg" for="password">Password</label>
-                <input class="form-control form-control-lg" type="password" placeholder="password" id="password">
+                <input class="form-control form-control-lg" type="password" name="password" placeholder="password" id="password">
 
                 <br>
                 <button type="submit" class="btn btn-outline-primary">Sign up</button>

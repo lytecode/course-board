@@ -24,12 +24,32 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 
+//passport config
+app.use(
+  require("express-session")({
+    secret: "Get this baby cooking",
+    resave: false,
+    saveUninitialized: false
+  })
+);
+
+//setup connect-flash
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
 // use static authenticate method of model in LocalStrategy
 passport.use(new LocalStrategy(User.authenticate()));
 
 // use static serialize and deserialize of model for passport session support
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+app.use(function(req, res, next) {
+  res.locals.success = req.flash("success");
+  res.locals.error = req.flash("error");
+  next();
+});
 
 app.use(router);
 

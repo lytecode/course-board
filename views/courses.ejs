@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trackit - Student Course Management System</title>
-    <link rel="stylesheet" href="/public/css/boostrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="/css/boostrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="home.html">Track IT</a>
+        <a class="navbar-brand" href="/">Track IT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,30 +20,43 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/courses">Add Course</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="profile.html">Profile</a>
+                    <a class="nav-link" href="/profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="courses.html">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
+                    <a class="nav-link" href="/logout">Logout</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- <header>
-        <h1>Sign up</h1>
-    </header> -->
-
     <div class="container">
+        <div class="container">
+            <% if(error && error.length > 0) { %>
+            <p class="alert alert-danger">
+                <%= error %>
+            </p>
+            <% } %>
+
+            <% if(success && success.length > 0) { %>
+            <p class="alert alert-success">
+                <%= success %>
+            </p>
+            <% } %>
+        </div>
+
         <div class="card courses">
-            <fieldset>
-                <legend>Please select the Courses you want to Register</legend>
+            <legend>Enter the courses you want to take below</legend>
+            <form class="form-inline my-2 my-lg-0 add__course" method="POST" action="/courses">
+                <input class="form-control mr-sm-2" type="text" name="course" placeholder="Enter a course" required>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Add</button>
+            </form>
+
+            <!-- <fieldset>
+                <legend>Here are the List of Avalaible courses</legend>
                 <div class="form-group">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="course1" checked="">
@@ -75,7 +88,7 @@
                     </div>
 
                 </div>
-            </fieldset>
+            </fieldset> -->
         </div>
     </div>
 
