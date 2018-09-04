@@ -12,7 +12,7 @@ header {
   background: linear-gradient(45deg, #2c3461, #0f7699);
 }
 
-header h1 {
+header h2 {
   text-align: center;
   color: #fff;
 }
@@ -72,6 +72,8 @@ legend {
   text-align: center;
 }
 
-#navbarColor01 {
-  padding-left: 60%;
+@media screen and (max-width: 600px) {
+  header h2 {
+    font-size: 30px;
+  }
 }
