@@ -76,4 +76,12 @@ legend {
   header h2 {
     font-size: 30px;
   }
+
+  .card {
+    width: 100%;
+  }
+
+  .form-group {
+    width: 80%;
+  }
 }
