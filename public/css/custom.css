@@ -40,13 +40,14 @@ footer {
   padding-top: 3%;
   padding-bottom: 5%;
 }
-.form-group {
+
+.register__form {
   width: 50%;
   margin: 0 auto;
 }
 
 .sign__in {
-  width: 40%;
+  max-width: 40%;
   margin: 0 auto;
 }
 
@@ -64,12 +65,17 @@ legend {
 
 .add__course {
   padding-bottom: 10px;
-  width: 40%;
   margin: 0 auto;
 }
 
 .err__details {
   text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .card {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -81,7 +87,11 @@ legend {
     width: 100%;
   }
 
-  .form-group {
-    width: 80%;
+  .sign__in {
+    max-width: 70%;
+  }
+
+  .courses legend {
+    font-size: 100%;
   }
 }
