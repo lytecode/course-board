@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trackit - Profile</title>
+    <title>CourseBoard - Profile</title>
     <link rel="stylesheet" href="/css/boostrap.min.css">
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="/">Track IT</a>
+        <a class="navbar-brand" href="/">CourseBoard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,9 +46,6 @@
                 <p>Username:
                     <%= student.username %>
                 </p>
-                <!-- <p>Address:
-                    <%= student.address %>
-                </p> -->
             </div>
             <div class="col-md-6">
                 <h2>Registered Courses</h2>
@@ -70,8 +67,7 @@
                                 <%= student.courses[i] %>
                             </td>
                             <td>
-                                <form action="/course/<%= student._id %>/<%= i %>?_method=DELETE" method="POST"
-                                    onsubmit="return confirm('Are you sure you want to delete this course?')">
+                                <form action="/course/<%= student._id %>/<%= i %>?_method=DELETE" method="POST">
                                     <button type="submit" class="btn btn-outline-danger">Delete</button>
                                 </form>
                             </td>
